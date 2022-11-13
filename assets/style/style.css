@@ -38,7 +38,7 @@ img {
 }
 
 #home{
-    background-image: url("../images/profile-image.png");
+    /* background-image: url("../images/profile-image.png"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -217,6 +217,8 @@ img {
 .project{
     overflow: hidden;
     position: relative;
+    height: 300px;
+    object-fit: cover;
 }
 
 .project .content{
@@ -233,6 +235,11 @@ img {
 
 .project img, .project .content {
     transition: var(--transition);
+}
+
+.project img{
+    width: 100%;
+    height: 100%;
 }
 
 .project:hover .content{
@@ -253,32 +260,6 @@ img {
 .client img{
     opacity: 0.7;
     height: 30px;
-}
-
-/* Resume */
-.eduexp {
-    position: relative;
-}
-
-
-.eduexp::before{
-    content: '';
-    height: 100%;
-    width: 1px;
-    background-color: rgba(var(--c-brand-rgb), 0.4);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.eduexp::after{
-    content: '';
-    height: 14px;
-    width: 14px;
-    background-color: var(--c-brand);
-    position: absolute;
-    top: 0;
-    left: -7px;
 }
 
 #contact .form-control{
@@ -313,10 +294,6 @@ footer ul {
     padding: 0;
 }
 
-.footer-top{
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
 
 .footer-bottom{
     padding-top: 40px;

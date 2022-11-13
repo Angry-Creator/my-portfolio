@@ -6,6 +6,10 @@ window.onscroll = function(){
     }
 }
 
+window.addEventListener("DOMContentLoaded", ()=>{
+    document.getElementById("navbar").style.backgroundColor = "white";
+})
+
 //AOS
 AOS.init({
     duration: 800,
